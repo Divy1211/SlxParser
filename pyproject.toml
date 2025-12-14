@@ -1,0 +1,9 @@
+[project]
+name = "smx-parser"
+version = "0.1.0"
+description = "This library is a tool for parsing `.smx` files for games like `AoE2` that use the Genie Engine"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "binary-file-parser>=0.3.0a20",
+]
