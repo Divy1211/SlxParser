@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SmxParser.iml" filepath="$PROJECT_DIR$/.idea/SmxParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SlxParser.iml" filepath="$PROJECT_DIR$/.idea/SlxParser.iml" />
     </modules>
   </component>
 </project>

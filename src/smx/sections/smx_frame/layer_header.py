@@ -3,10 +3,10 @@ from __future__ import annotations
 from bfp_rs import BaseStruct, Retriever
 from bfp_rs.types.le import u16, i16, u32
 
-from sections.smx_versions import DE_LATEST
+from smx.sections.smx_versions import DE_LATEST
 
 
-class LayerHeader(BaseStruct):
+class SmxLayerHeader(BaseStruct):
     __default_ver__ = DE_LATEST
 
     # @formatter:off

@@ -8,9 +8,9 @@ from bfp_rs.types.le import (
     i16
 )
 
-from sections.frame import Frame
-from sections.header import Header
-from sections.smx_versions import DE_LATEST
+from smx.sections.smx_frame import SmxFrame
+from smx.sections.smx_header import SmxHeader
+from smx.sections.smx_versions import DE_LATEST
 
 if TYPE_CHECKING:
     from bfp_rs import ByteStream
@@ -20,8 +20,8 @@ class SmxFile(BaseStruct):
     __default_ver__ = DE_LATEST
 
     # @formatter:off
-    header: Header =      Retriever(Header, default_factory = Header, on_read = lambda: [set_repeat(ret(SmxFile.frames)).from_(ret(SmxFile.header), ret(Header.num_frames))])
-    frames: list[Frame] = Retriever(Frame,  default_factory = lambda _ver: [], repeat = 0)
+    header: SmxHeader =      Retriever(SmxHeader, default_factory = SmxHeader, on_read = lambda: [set_repeat(ret(SmxFile.frames)).from_(ret(SmxFile.header), ret(SmxHeader.num_frames))])
+    frames: list[SmxFrame] = Retriever(SmxFrame,  default_factory = lambda _ver: [], repeat = 0)
     # @formatter:on
 
     @classmethod
