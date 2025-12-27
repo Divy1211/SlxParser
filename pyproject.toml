@@ -5,5 +5,5 @@ description = "This library is a tool for parsing `.smx` files for games like `A
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "binary-file-parser>=0.3.0a20",
+    "binary-file-parser>=0.3.0a23",
 ]
