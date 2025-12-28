@@ -10,15 +10,15 @@ class SldLayerHeader(BaseStruct):
     __default_ver__ = DE_LATEST
 
     # @formatter:off
-    num_bytes: int =    Retriever(u32,  default = 0)
-    offset_x1: int =    Retriever(u16,  default = 0)
+    num_bytes: int =      Retriever(u32,  default = 0)
+    offset_x1: int =      Retriever(u16,  default = 0)
     """top left"""
-    offset_y1: int =    Retriever(u16,  default = 0)
+    offset_y1: int =      Retriever(u16,  default = 0)
     """top left"""
-    offset_x2: int =    Retriever(u16,  default = 0)
+    offset_x2: int =      Retriever(u16,  default = 0)
     """bottom right"""
-    offset_y2: int =    Retriever(u16,  default = 0)
+    offset_y2: int =      Retriever(u16,  default = 0)
     """bottom right"""
-    flag1: int =        Retriever(u8,   default = 0)
-    unknown: int =      Retriever(u8,   default = 1)
+    storage_scheme: int = Retriever(u8,   default = 0)
+    padding: int =        Retriever(u8,   default = 1)
     # @formatter:on

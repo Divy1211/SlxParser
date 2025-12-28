@@ -14,6 +14,6 @@ class SldFrameHeader(BaseStruct):
     anchor_x: int =   Retriever(i16,  default = 0)
     anchor_y: int =   Retriever(i16,  default = 0)
     frame_type: int = Retriever(u8,   default = 0x03)
-    unknown: int =    Retriever(u8,   default = 0)
+    flags: int =      Retriever(u8,   default = 0)
     index: int =      Retriever(u16,  default = 0)
     # @formatter:on

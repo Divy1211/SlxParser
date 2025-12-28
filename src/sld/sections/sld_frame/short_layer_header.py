@@ -10,7 +10,7 @@ class SldShortLayerHeader(BaseStruct):
     __default_ver__ = DE_LATEST
 
     # @formatter:off
-    num_bytes: int =    Retriever(u32,  default = 0)
-    flag1: int =        Retriever(u8,   default = 0)
-    unknown: int =      Retriever(u8,   default = 1)
+    num_bytes: int =      Retriever(u32,  default = 0)
+    storage_scheme: int = Retriever(u8,   default = 0)
+    padding: int =        Retriever(u8,   default = 1)
     # @formatter:on
