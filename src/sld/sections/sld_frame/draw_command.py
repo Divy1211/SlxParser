@@ -10,6 +10,6 @@ class SldDrawCommand(BaseStruct):
     __default_ver__ = DE_LATEST
 
     # @formatter:off
-    skipped_block_count: int = Retriever(u8, default = 0)
-    draw_block_count: int    = Retriever(u8, default = 0)
+    num_blocks_skipped: int = Retriever(u8, default = 0)
+    num_blocks_drawn: int   = Retriever(u8, default = 0)
     # @formatter:on
